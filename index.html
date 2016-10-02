@@ -23,7 +23,6 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
     <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
     <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
-
     <!--
     #### Metadata
     -->
@@ -37,10 +36,6 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
   .logo {
     background-position: left 16px center;
     background-repeat: no-repeat;
-    background-image: -webkit-image-set(
-      url(/img/ic_menu_white_1x_web_24dp.png) 1x,
-      url(/img/ic_menu_white_2x_web_24dp.png) 2x
-      );
     background-color: #333;
     text-align: left;
     padding: 16px;
@@ -90,20 +85,16 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
 
   </head>
   <body>
-
     <!-- -->
     <div class="logo">
       <a href="/"> AMP by Example</a>
     </div>
-
     <div class="heading">
       <h1>Thảm họa diệt vong - Cloverfield</h1>
       <p id="summary">là một bộ phim quái vật thuộc thể loại kinh dị được sản xuất vào năm 2008 bởi J. J. Abrams, đạo diễn Matt Reeves, và kịch bản Drew Goddard. Ngay trước khi phim ra đời, Paramount Pictures đã có một chiến dịch quảng cáo rầm rộ đẻ thu hút khán giả quan tâm đến. Nội dung chính của bộ phim nói về một nhóm bạn ở New York đã tổ chức một bữa tiệc chia tay cho Rob trước khi anh bay qua Nhật Bản. Tất cả bị phá vỡ bởi một tiếng ồn và một trận động đất, do một sinh vật kì lạ to lớn nào đấy. </p>
       <p><small>Được sản xuất vào năm 2008 bởi J. J. Abrams, đạo diễn Matt Reeves, và kịch bản Drew Goddard</small></p>
     </div>
-
     <!-- #### Social Sharing  -->
-
     <!-- 
     The Social Share extension provides a common interface for share buttons.  Learn more about `amp-social-share` [here](/components/amp-social-share/).
     -->
@@ -116,23 +107,7 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
     </p>
     <figure>
       <amp-img src="/img/Cloverfield-2008-after-credits-hq.jpg" width=1920 height=1080 layout=responsive></amp-img>
-      <figcaption>Thảm họa diệt vong - Cloverfield.</figcaption>
     </figure>
-
-    <!-- #### AD Support -->
-    <!--
-    There are no limitations regarding the number or placement of ads in an AMP. Learn more about `amp-ad` [here](/components/amp-ad/).
-    -->
-    <div class="amp-ad-container">
-      <span>amp-ad</span>
-      <amp-ad width=300 height=250
-         type="a9"
-         data-aax_size="300x250"
-         data-aax_pubname="test123"
-         data-aax_src="302">
-      </amp-ad>
-    </div>
-
     <p>
     Toàn bộ Cloverfield được quay bằng một camera cầm tay do một nhân vật trong phim quay, Hud. Đây là một kiểu quay độc đáo góp phần thành công cho bộ phim. Tuy nhiên, kiểu quay này làm người xem rạp bị chóng mặt do xung quanh là một phòng lớn, tối và màn hình rộng. Một số rạp trên thế giới có để bảng cảnh báo, nhưng ở Việt Nam thì không.</p>
     <p>
@@ -156,7 +131,6 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
         <amp-img src="/img/Cloverfield_Stills-14.jpg" width=1280 height=853 layout=responsive></amp-img>
       </figure>
     </amp-carousel>
-
     <p>Kinh phi thực hiện chỉ là 25 triệu USD cùng 5 triệu cho quảng cáo thì tổng cộng Paramount Pictures, Bad Robot (hay cả đạo diễn) bỏ ra cho bộ phim chỉ 30 triệu USD (khoảng 477 tỉ VNĐ). Đó là con số quá nhỏ so với 130 triệu USD cho bộ phim Godzilla (của Mỹ sản xuất) ra mắt vào năm 1998, cũng về đề tài một quái vật khổng lồ. Sở dĩ để thu hẹp lại kinh phí như thế là nhờ một phần vì bộ phim được thực hiện bằng camera, một phần nữa vì phim có dàn diễn viên không nổi tiếng (cho lắm).
     </p>
     <p>
@@ -183,15 +157,5 @@ This is a sample template for a news article in AMP. It demonstrates the usage o
         </amp-img>
       </amp-iframe>
     </figure>
-    <!--
-    #### Cookie Consent
-    -->
-    <!--
-    Use `amp-user-notification` to implement a cookie consent form (if needed). By default, the AMP runtime doesn't use cookies. Some analytics vendors might use require cookies though. Learn more about `amp-user-notification` [here](/components/amp-user-notification/)
-    -->
-    <amp-user-notification layout=nodisplay id="amp-user-notification1">
-      This page might use cookies if your analytics vendor requires them.
-      <a on="tap:amp-user-notification1.dismiss">Accept</a>
-    </amp-user-notification>
   </body>
 </html>
